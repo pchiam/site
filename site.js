@@ -33,10 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root1',
-  database: 'lab1'
+  host: 'db_host',
+  user: 'db_root',
+  password: 'db_root1',
+  database: 'db_lab1' 
 });
 
 // Login endpoint
