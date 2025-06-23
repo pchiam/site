@@ -36,7 +36,8 @@ const db = mysql.createConnection({
   host: 'db_host',
   user: 'db_root',
   password: 'db_root1',
-  database: 'db_lab1' 
+  database: 'db_lab1',
+  port: 'db_port' 
 });
 
 // Login endpoint
@@ -71,4 +72,4 @@ app.delete('/items/:id', (req, res) => {
 });
 
 // Start
-app.listen(port, () => console.log(`Server: http://localhost:${port}`));
+app.listen(port, () => console.log(`Server: http://db_host:${port}`));
